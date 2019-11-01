@@ -92,7 +92,9 @@ Now that we have some source code and a Dockerfile, it's time to build our first
     Also notice, we didn't specify what process we wanted our container to run. We didn't have to, since we used the `CMD` directive when building our Dockerfile; thanks to this, Docker knows to automatically run the process `npm start` inside our container when it starts up.
 
 3.  Visit your application in a browser at `localhost:8000`. You should see your bulletin board application up and running. At this step, we would normally do everything we could to ensure our container works the way we expected; now would be the time to run unit tests, for example.
-
+/// Run npm install.
+    Run node server.js.
+    Visit http://localhost:8080.
 4.  Once you're satisfied that your bulletin board container works correctly, delete it:
 
     ```script
